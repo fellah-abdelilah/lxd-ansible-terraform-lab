@@ -21,25 +21,25 @@ The goal is to provision **two Linux servers** (`web` and `db`) in a **reproduci
 
 ## 🧱 Architecture
 
-Host Linux (Ubuntu)
-│
-├── LXD
-│   ├── web01
-│   │   └── Nginx
-│   │
-│   └── db01
-│       └── MariaDB
-│
-├── Terraform
-│   ├── Infrastructure provisioning
-│   │   ├── LXD containers
-│   │   ├── SSH key injection
-│   │   └── Ansible inventory generation
-│
-└── Ansible
-    ├── Configuration management
-    │   ├── Web server (Nginx)
-    │   └── Database server (MariaDB)
+Host Linux (Ubuntu)<br>
+│<br>
+├── LXD<br>
+│   ├── web01<br>
+│   │   └── Nginx<br>
+│   │<br>
+│   └── db01<br>
+│       └── MariaDB<br>
+│<br>
+├── Terraform<br>
+│   ├── Infrastructure provisioning<br>
+│   │   ├── LXD containers<br>
+│   │   ├── SSH key injection<br>
+│   │   └── Ansible inventory generation<br>
+│<br>
+└── Ansible<br>
+    ├── Configuration management<br>
+    │   ├── Web server (Nginx)<br>
+    │   └── Database server (MariaDB)<br>
 
 
 
