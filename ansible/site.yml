@@ -1,0 +1,31 @@
+- name: Configuration des serveurs web
+  hosts: web
+  become: true
+  tasks:
+    - name: Installer nginx
+      apt:
+        name: nginx
+        state: present
+        update_cache: yes
+
+    - name: Démarrer nginx
+      service:
+        name: nginx
+        state: started
+        enabled: yes
+
+- name: Configuration des serveurs db
+  hosts: db
+  become: true
+  tasks:
+    - name: Installer mariadb
+      apt:
+        name: mariadb-server
+        state: present
+        update_cache: yes
+
+    - name: Démarrer mariadb
+      service:
+        name: mariadb
+        state: started
+        enabled: yes
