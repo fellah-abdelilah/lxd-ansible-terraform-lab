@@ -98,6 +98,7 @@ lxd-ansible-terraform-lab/<br>
 ```bash
 cd terraform
 terraform init
+terraform plan
 terraform apply
 ```
 Terraform will:
